@@ -5,7 +5,7 @@ import com.jcraft.jsch.*;
 public class Login {
     public static void main(String[] args) {
         String user = "karnan";
-        String host = "192.168.64.3";
+        String host = "<ip-address>";
         String password = "****";
 
         try {
