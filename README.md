@@ -1,35 +1,3 @@
-🔐 Remote Linux Management using Java (SSH)
-This Java project allows you to remotely log in to a Linux machine, check for security patches, apply those patches, and display the system uptime using the JSCH library.
-
-📌 Project Tasks
-Login to a Linux machine using SSH
-
-List available security patches
-
-Apply the security patches
-
-Display the system uptime
-
-🛠️ Requirements
-Java Development Kit (JDK)
-
-JSCH Library
-👉 Download jsch-0.1.55.jar
-
-Make sure to add the downloaded JAR file to your project’s build path.
-
-✅ How It Works
-1️⃣ Login to the Linux Machine
-We use JSCH to open an SSH connection (port 22) to the remote Linux machine.
-
-java
-Copy
-Edit
-JSch jsch = new JSch();
-Session session = jsch.getSession(user, host, 22);
-session.setPassword(password);
-session.setConfig("StrictHostKeyChecking", "no");
-session.connect();
 # 🔐 Remote Linux Management using Java (SSH)
 
 This Java project allows you to **remotely log in to a Linux machine**, **check for security patches**, **apply those patches**, and **display the system uptime** using the **JSCH** library.
